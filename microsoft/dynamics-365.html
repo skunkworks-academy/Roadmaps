@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Microsoft Dynamics 365 Course Options</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Microsoft Dynamics 365 Course Offerings</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: #f3f4f6;
+      background: #f4f6f8;
       color: #333;
       padding: 2rem;
     }
+
     h1 {
       text-align: center;
       color: #0063B1;
       margin-bottom: 2rem;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -24,35 +26,73 @@
       max-width: 1200px;
       margin: auto;
     }
+
     .card {
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.05);
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
       transition: transform 0.2s ease;
     }
+
     .card:hover {
       transform: scale(1.02);
     }
+
     .card img {
       width: 100%;
       height: 160px;
-      object-fit: cover;
+      object-fit: contain;
+      background: #e6f0fa;
+      padding: 1rem;
     }
+
     .card-content {
       padding: 1.5rem;
     }
+
     .title {
       font-size: 1rem;
       font-weight: 600;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
       color: #004578;
     }
+
     .price {
-      font-size: 1.1rem;
-      font-weight: bold;
+      font-size: 1rem;
       color: #10b981;
+      font-weight: bold;
     }
+
+    .rate {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-top: 0.25rem;
+    }
+
+    .instructor {
+      margin-top: 3rem;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    }
+
+    .instructor h2 {
+      color: #004578;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .instructor p {
+      margin-bottom: 0.5rem;
+    }
+
     .footer {
       text-align: center;
       margin-top: 3rem;
@@ -63,43 +103,57 @@
 </head>
 <body>
 
-  <h1>📚 Microsoft Dynamics 365 Training Offers</h1>
+  <h1>📘 Microsoft Dynamics 365 Training – Course Options</h1>
+
   <div class="grid">
     <div class="card">
-      <img src="https://via.placeholder.com/400x160?text=MB-800T00-A" alt="MB-800T00-A">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Microsoft_Office_Icons_2020_-_Dynamics_365.svg" alt="MB-800T00-A">
       <div class="card-content">
         <div class="title">MB-800T00-A: Business Central Functional Consultant</div>
-        <div class="price">$43.12</div>
+        <div class="price">USD $43.12</div>
+        <div class="rate">Instructor Rate: $500/day</div>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/400x160?text=MB-500T00-A" alt="MB-500T00-A">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_Office_Icons_2020_-_PowerApps.svg" alt="MB-500T00-A">
       <div class="card-content">
         <div class="title">MB-500T00-A: Finance & Operations Apps Developer</div>
-        <div class="price">$78.41</div>
+        <div class="price">USD $78.41</div>
+        <div class="rate">Instructor Rate: $500/day</div>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/400x160?text=MB-310T00-A" alt="MB-310T00-A">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Microsoft_Office_Icons_2020_-_Excel.svg" alt="MB-310T00-A">
       <div class="card-content">
         <div class="title">MB-310T00-A: Manage Financial Operations</div>
-        <div class="price">$43.52</div>
+        <div class="price">USD $43.52</div>
+        <div class="rate">Instructor Rate: $500/day</div>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/400x160?text=55259A" alt="55259A">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Microsoft_Office_Icons_2020_-_Teams.svg" alt="55259A">
       <div class="card-content">
         <div class="title">55259A: Customer Engagement for Developers</div>
-        <div class="price">$31.83</div>
+        <div class="price">USD $31.83</div>
+        <div class="rate">Instructor Rate: $500/day</div>
       </div>
     </div>
   </div>
 
+  <div class="instructor">
+    <h2>🎓 Instructor Profile: Raydo Matthee</h2>
+    <p><strong>Role:</strong> IBM & Microsoft Certified Trainer, Dynamics 365 Specialist</p>
+    <p><strong>Experience:</strong> 15+ years delivering enterprise training across Microsoft Dynamics, Power Platform, and ERP integrations</p>
+    <p><strong>Certifications:</strong> Microsoft Certified Trainer (MCT), Dynamics 365 Functional Consultant, Power Platform Architect</p>
+    <p><strong>Delivery Mode:</strong> Instructor-Led Online (ILO), Onsite (as required)</p>
+    <p><strong>Daily Rate:</strong> USD $500 (includes prep, delivery, and post-training support)</p>
+  </div>
+
   <div class="footer">
-    Prices based on estimated exchange rate (ZAR to USD). Subject to currency fluctuations.
+    Pricing includes courseware access. Final price subject to currency fluctuation (ZAR/USD). Icons © Microsoft.
   </div>
 
 </body>
